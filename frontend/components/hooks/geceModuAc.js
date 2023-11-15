@@ -1,4 +1,4 @@
-import { useLocalStorage } from "./useLocalStorage";
+import { useLocalStorage } from "./localStrongeKullan";
 
 export const useGeceModu = (initialValue) => {
   //const [geceModu, setGeceModu] = useState(initialValue);

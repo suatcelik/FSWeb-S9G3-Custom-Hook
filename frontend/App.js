@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useGeceModu } from "./hooks/useGeceModu";
+import { useGeceModu } from "./components/hooks/geceModuAc";
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
@@ -20,9 +20,8 @@ const App = () => {
   }, []);
   return (
     <div className={geceModu ? "dark-mode App" : "App"}>
-      <Navbar geceModu={geceModu} setGeceModu={setGeceModu} />
-      <Charts coinData={coinData} />
       <Navbar geceModu={geceModu} toggleHandler={toggleHandler} />
+      <Charts coinData={coinData} />
     </div>
   );
 };
